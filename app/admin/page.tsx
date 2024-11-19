@@ -4,7 +4,7 @@ import AdminPosts from "@/components/AdminPosts";
 import AdminPostForm from "@/components/AdminPostForm";
 import AdminUsers from "@/components/AdminUsers";
 import { getServerSession } from "next-auth";
-import { authOptions } from "@/app/api/auth/[...nextauth]/route";
+import { authOptions } from "@/lib/auth";
 import AdminUserForm from "@/components/AdminUserForm";
 
 async function page() {

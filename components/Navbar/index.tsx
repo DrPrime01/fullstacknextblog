@@ -2,7 +2,7 @@ import Link from "next/link";
 import styles from "./navbar.module.css";
 import Links from "./Links";
 import { getServerSession } from "next-auth";
-import { authOptions } from "@/app/api/auth/[...nextauth]/route";
+import { authOptions } from "@/lib/auth";
 
 const Navbar = async () => {
   const session = await getServerSession(authOptions);
